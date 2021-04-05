@@ -10,3 +10,10 @@ spring:
     port: 6379
     # 超时时间 Duration类型 3秒
     timeout: 3S
+  # 数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/xboot?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    # Jasypt加密 可到common-utils中找到JasyptUtil加解密工具类生成加密结果 格式为ENC(加密结果) 以下解密结果为123456
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
